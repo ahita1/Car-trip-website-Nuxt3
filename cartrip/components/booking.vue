@@ -598,12 +598,6 @@
 </template>
   
   <script >
-
-
-
-
-
-
 import { ref } from "vue";
 import {
   TransitionRoot,
@@ -624,23 +618,18 @@ export default {
   },
   setup() {
     const isOpen = ref(false);
-
     function closeModal() {
       isOpen.value = false;
     }
-
     function openModal() {
       isOpen.value = true;
     }
-
     return {
       isOpen,
       closeModal,
       openModal,
     };
   },
-
-
   methods: {  
     openPopup() {
       var popup = document.getElementById("popup");
@@ -651,25 +640,19 @@ export default {
       popup.style.display = "none";
     },
   },
-
-
 };
 </script>
-  
   <style>
 .modal-container {
   background-color: #f2f2f2; /* Set the desired background color */
 }
-
 .trip {
   position: relative;
 
   text-decoration: none;
 }
-
 .trip:hover {
 }
-
 .trip::before {
   content: "";
   position: absolute;
@@ -682,21 +665,12 @@ export default {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-
 .trip:hover::before {
   transform: scaleX(1);
 }
-
-
-
-
-
-
-
-
-
-
-
+/* ########################################################################################## */
+/* pop style haha */
+/* ########################################################################################## */
 .popup {
   display: none;
   position: fixed;
@@ -708,7 +682,6 @@ export default {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .popup-content {
   /* background-color: #fefefe; */
   margin: 13% auto;
@@ -718,7 +691,6 @@ export default {
   height: 60%;
   border-radius: 10px;
 }
-
 .close {
   color: #aaa;
   float: right;
@@ -726,7 +698,6 @@ export default {
   font-weight: bold;
   cursor: pointer;
 }
-
 .close:hover,
 .close:focus {
   color: black;
