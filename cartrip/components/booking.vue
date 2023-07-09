@@ -281,18 +281,9 @@
           <div class="w-6/12 flex flex-col">
 
 
-            <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content bg-white">
-                <span class="close" @click="closePopup()">ESC</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+          <div>
+            <gotrip />
+          </div>
 
 
 
@@ -327,7 +318,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="/Homepages/viewDetails">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -347,18 +338,9 @@
           <div class="w-6/12 flex flex-col">
             
 
-            <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+            <div>
+            <gotrip />
+          </div>
 
 
             <div class="space-y-2">
@@ -378,7 +360,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -396,18 +378,9 @@
           </div>
           <!-- car details -->
           <div class="w-6-12 flex flex-col">
-            <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+            <div>
+            <gotrip />
+          </div>
 
 
 
@@ -429,7 +402,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -449,18 +422,9 @@
           </div>
           <!-- car details -->
           <div class="w-6-12 flex flex-col">
-            <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+            <div>
+            <gotrip />
+          </div>
 
 
 
@@ -481,7 +445,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -498,18 +462,9 @@
           </div>
           <!--car details -->
           <div class="w-6-12 flex flex-col">
-           <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+            <div>
+            <gotrip />
+          </div>
 
 
 
@@ -533,7 +488,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -551,18 +506,9 @@
           </div>
           <!--car details -->
           <div class="w-6-12 flex flex-col">
-            <div class="flex space-x-2">
-              <button @click="openPopup" class="trip text-green-400 mb-7">
-                Go trip
-              </button>
-            </div>
-            <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
-              </div>
-            </div>
+            <div>
+            <gotrip />
+          </div>
 
 
 
@@ -586,7 +532,7 @@
             </div>
 
             <div class="details mt-auto">
-              <nuxt-link to="">
+              <nuxt-link to="/viewMore">
                 <p class="underline mb-auto">View More</p>
               </nuxt-link>
             </div>
@@ -606,6 +552,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/vue";
+import Gotrip from './popupGotrip/gotrip.vue';
 
 export default {
   name: "ExampleComponent",
@@ -615,6 +562,7 @@ export default {
     Dialog,
     DialogPanel,
     DialogTitle,
+    Gotrip,
   },
   setup() {
     const isOpen = ref(false);

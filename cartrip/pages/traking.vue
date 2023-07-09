@@ -1,6 +1,6 @@
 <template>
     <div>
-      
+      <traking />
     </div>
   </template>
   

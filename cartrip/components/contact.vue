@@ -1,17 +1,14 @@
 <template>
   <div>
-    <input v-model=" text " type="text" class="border outline-none">
-    <p> {{  text }}</p>
+     <gotrip />
   </div>
 </template>
 
 <script>
+import gotrip from './popupGotrip/gotrip.vue'
 export default {
-data (){
-  return{
-    text : ''
-  }
-},
+  components: { gotrip },
+
 }
 </script>
 
