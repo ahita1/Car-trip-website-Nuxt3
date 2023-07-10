@@ -3,19 +3,6 @@
     <div
       class="flex justify-between items center mb-5 border shadow-sm px-2 items-center py-2"
     >
-
-
-
-
-
-
-
-
-
-
-
-
-    
       <p class="text-xl font-semibold">Booking</p>
       <!-- <button @click="refresh">Refresh</button> -->
 
@@ -93,117 +80,109 @@
                       </h1>
                     </DialogTitle>
 
-                    <form
-                      @submit="(e) => login(e)"
-                      action=""
-                      class="flex flex-col"
-                    >
-                      <tbody class="flex justify-center items-center">
-                        <table class="">
-                          <tr class="">
-                            <td class=""><label for="">Name:</label></td>
-                            <td class="">
-                              <input
-                                placeholder="Car Name"
-                                class="w-[200px] bg-green-100 inputs outline-none border border-green-100 px-2 py-1 rounded-md"
-                                type="text"
-                              />
-                            </td>
-                          </tr>
-                          <tr class=" ">
-                            <td class=""><label for="">ID:</label></td>
-                            <td class="">
-                              <input
-                                placeholder="Car ID"
-                                class="w-[200px] bg-green-100 inputs outline-none border border-green-100 px-2 py-1 rounded-md"
-                                type="text"
-                              />
-                            </td>
-                          </tr>
-                          <tr class=" ">
-                            <td class=""><label for="">Type:</label></td>
-                            <td class="">
-                              <select
-                                class="inputs bg-green-100 outline-none border border-green-100 py-1 px-2 w-[200px] rounded-md"
-                                name="Cars"
-                                id="2023Car"
-                                aria-placeholder="Car Type"
-                              >
-                                <option disabled selected value="">Type</option>
-                                <option value="">SUV</option>
-                                <option value="">Crossover</option>
-                                <option value="">Sedan</option>
-                                <option value="">Truck</option>
-                                <option value="">Wagon/Hatchback</option>
-                                <option value="">convertible</option>
-                                <option value="">Luxury</option>
-                                <option value="">Coupe</option>
-                                <option value="">Van/Minivan</option>
-                                <option value="">Sports Car</option>
-                                <option value="">
-                                  Certified <Pre-Owned></Pre-Owned>
-                                </option>
-                                <option value="">Hybrid/Electric</option>
-                              </select>
-                            </td>
-                          </tr>
+                    <div class="flex justify-center items-center h-full w-full">
+                      <div class="h-full">
+                        <form
+                          @submit="(e) => login(e)"
+                          action=""
+                          class="h-full space-y-2"
+                        >
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">Name:</label>
 
-                          <tr class=" ">
-                            <td class="">
-                              <label for="">Model:</label>
-                            </td>
-                            <td class="">
-                              <select
-                                class="inputs bg-green-100 outline-none border border-green-100 py-1 px-2 w-[200px] rounded-md"
-                                name="Cars"
-                                id="2023Car"
-                                aria-placeholder="Car Type"
-                              >
-                                <option disabled selected value="">
-                                  Model
-                                </option>
-                                <option value="">SUV</option>
-                                <option value="">Crossover</option>
-                                <option value="">Sedan</option>
-                                <option value="">Truck</option>
-                                <option value="">Wagon/Hatchback</option>
-                              </select>
-                            </td>
-                          </tr>
+                            <input
+                              placeholder="Car Name"
+                              class="w-8/12 bg-green-100 inputs outline-none border border-slate-300 px-2 py-1 rounded-md"
+                              type="text"
+                            />
+                          </div>
 
-                          <tr class="">
-                            <td class=""><label for="">Year:</label></td>
-                            <td class="">
-                              <input
-                                placeholder="Year"
-                                class="w-[200px] bg-green-100 inputs outline-none border border-green-100 px-2 py-1 rounded-md"
-                                type="date "
-                              />
-                            </td>
-                          </tr>
-                          <tr class="">
-                            <td class=""><label for="">LPN:</label></td>
-                            <td class="">
-                              <input
-                                placeholder="License PN"
-                                class="w-[200px] bg-green-100 inputs outline-none border border-green-100 px-2 py-1 rounded-md"
-                                type="text"
-                              />
-                            </td>
-                          </tr>
-                        </table>
-                      </tbody>
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">ID:</label>
 
-                      <div class="flex justify-center items-center">
-                        <div class="">
+                            <input
+                              placeholder="Car ID"
+                              class="w-8/12 bg-green-100 inputs outline-none border border-slate-300 px-2 py-1 rounded-md"
+                              type="text"
+                            />
+                          </div>
+
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">Type:</label>
+
+                            <select
+                              class="inputs bg-green-100 outline-none border border-slate-300 py-2 px-2 w-8/12 rounded-md"
+                              name="Cars"
+                              id="2023Car"
+                              aria-placeholder="Car Type"
+                            >
+                              <option disabled selected value="">Type</option>
+                              <option value="">SUV</option>
+                              <option value="">Crossover</option>
+                              <option value="">Sedan</option>
+                              <option value="">Truck</option>
+                              <option value="">Wagon/Hatchback</option>
+                              <option value="">convertible</option>
+                              <option value="">Luxury</option>
+                              <option value="">Coupe</option>
+                              <option value="">Van/Minivan</option>
+                              <option value="">Sports Car</option>
+                              <option value="">
+                                Certified <Pre-Owned></Pre-Owned>
+                              </option>
+                              <option value="">Hybrid/Electric</option>
+                            </select>
+                          </div>
+
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">Model:</label>
+
+                            <select
+                              class="inputs bg-green-100 outline-none border border-slate-300 py-2 px-2 w-8/12 rounded-md"
+                              name="Cars"
+                              id="2023Car"
+                              aria-placeholder="Car Type"
+                            >
+                              <option disabled selected value="">Model</option>
+                              <option value="">SUV</option>
+                              <option value="">Crossover</option>
+                              <option value="">Sedan</option>
+                              <option value="">Truck</option>
+                              <option value="">Wagon/Hatchback</option>
+                            </select>
+                          </div>
+
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">Year:</label>
+
+                            <input
+                              placeholder="Year"
+                              class="w-8/12 bg-green-100 inputs outline-none border border-slate-300 px-2 py-1 rounded-md"
+                              type="date "
+                            />
+                          </div>
+
+                          <div class="flex grid-cols-2">
+                            <label class="w-4/12" for="">LPN:</label>
+
+                            <input
+                              placeholder="License PN"
+                              class="w-8/12 bg-green-100 inputs outline-none border border-slate-300 px-2 py-1 rounded-md"
+                              type="text"
+                            />
+                          </div>
+                          <div class="w-full flex justify-end items-end">
                           <button
                             class="border px-10 py-2 bg-green-500 text-white rounded-md hover:bg-green-700 font-bold"
                           >
                             Next
                           </button>
                         </div>
+                        </form>
+                         
                       </div>
-                    </form>
+                      
+                    </div>
                   </DialogPanel>
                 </TransitionChild>
               </div>
@@ -211,7 +190,6 @@
           </Dialog>
         </TransitionRoot>
       </div>
-
     </div>
     <div class="flex space-x-10">
       <div>
@@ -279,25 +257,9 @@
           </div>
           <!-- car details -->
           <div class="w-6/12 flex flex-col">
-
-
-          <div class="">
-            <gotrip />
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
+            <div class="">
+              <gotrip />
+            </div>
 
             <div class="space-y-1">
               <p>Hummer 2021 new</p>
@@ -336,12 +298,9 @@
           </div>
           <!-- car details -->
           <div class="w-6/12 flex flex-col">
-            
-
             <div>
-            <gotrip />
-          </div>
-
+              <gotrip />
+            </div>
 
             <div class="space-y-2">
               <p>Toyota 2021 new</p>
@@ -379,12 +338,9 @@
           <!-- car details -->
           <div class="w-6-12 flex flex-col">
             <div>
-            <gotrip />
-          </div>
+              <gotrip />
+            </div>
 
-
-
-            
             <div class="space-y-2">
               <p>Corolla 2021 new</p>
               <p>GHFSD7</p>
@@ -423,10 +379,8 @@
           <!-- car details -->
           <div class="w-6-12 flex flex-col">
             <div>
-            <gotrip />
-          </div>
-
-
+              <gotrip />
+            </div>
 
             <div class="space-y-2">
               <p>Mustang 2021 new</p>
@@ -463,13 +417,8 @@
           <!--car details -->
           <div class="w-6-12 flex flex-col">
             <div>
-            <gotrip />
-          </div>
-
-
-
-
-
+              <gotrip />
+            </div>
 
             <div class="space-y-2">
               <p>Ford 2021 new</p>
@@ -507,14 +456,9 @@
           <!--car details -->
           <div class="w-6-12 flex flex-col">
             <div>
-            <gotrip />
-          </div>
+              <gotrip />
+            </div>
 
-
-
-
-
-            
             <div class="space-y-2">
               <p>Hayundai 2021 new</p>
               <p>XGHFT7</p>
@@ -552,7 +496,7 @@ import {
   DialogPanel,
   DialogTitle,
 } from "@headlessui/vue";
-import Gotrip from './popupGotrip/gotrip.vue';
+import Gotrip from "./popupGotrip/gotrip.vue";
 
 export default {
   name: "ExampleComponent",
@@ -578,7 +522,7 @@ export default {
       openModal,
     };
   },
-  methods: {  
+  methods: {
     openPopup() {
       var popup = document.getElementById("popup");
       popup.style.display = "block";

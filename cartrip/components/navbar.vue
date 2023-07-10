@@ -13,7 +13,12 @@
     </div>
     <div class="flex space-x-24">
       <h1>hey Fani haha</h1>
-      <img class="w-7 h-7" src="../static/notification.svg" alt="" />
+     <div>
+      <img class="w-7 h-7 relative" src="../static/notification.svg" alt="" />
+    <button>
+      <p class="notif absolute top-2 right-4  z-50 w-5 h-5 text-sm flex justify-center items-center border-red-800 font-bold text-white  rounded-full dynamic">2+</p>
+    </button>
+     </div>
     </div>
   </div>
 </template>
@@ -23,4 +28,7 @@ export default {};
 </script>
 
 <style>
+.notif{
+  background-color: red;
+}
 </style>
