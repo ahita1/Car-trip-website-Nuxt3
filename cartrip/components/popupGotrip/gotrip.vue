@@ -6,10 +6,38 @@
               </button>
             </div>
             <div id="popup" class="popup">
-              <div class="popup-content">
-                <span class="close" @click="closePopup()">&times;</span>
-                <h1>This is a popup</h1>
-                <p>Hello, World!</p>
+              <div class="popup-content ">
+              <div class="w-full h-full flex justify-center items-center">
+                <div>
+                <!-- <span class="close" @click="closePopup()">&times;</span> -->
+                <button @click="closePopup">close</button>
+               </div>
+               
+             <div class="">
+                  <form action="" class="">
+                 <table>
+                   <tBody>
+                    <tr>
+                      <td><label for="">FirstName</label></td>
+                      <td><input type="text" placeholder="Abebe"></td>
+                    </tr>
+                     <tr>
+                      <td><label for="">FirstName</label></td>
+                      <td><input type="text" placeholder="Abebe"></td>
+                    </tr>
+                     <tr>
+                       <td><label for="">FirstName</label></td>
+                      <td><input type="text" placeholder="Abebe"></td>
+                    </tr>
+                     <tr>
+                      <td><label for="">FirstName</label></td>
+                      <td><input type="text" placeholder="Abebe"></td>
+                    </tr>
+                  </tBody>
+                 </table>
+                 </form>
+             </div>
+              </div>
               </div>
             </div>
   </div>
@@ -34,12 +62,12 @@ export default {
 .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .popup-content {
@@ -49,12 +77,12 @@ export default {
   border: 1px solid #888;
   width: 50%;
   height: 60%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .close {
   color: #aaa;
   float: right;
-  font-size: 36px;
+  font-size: 10px;
   font-weight: bold;
   cursor: pointer;
 }

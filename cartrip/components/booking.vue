@@ -281,7 +281,7 @@
           <div class="w-6/12 flex flex-col">
 
 
-          <div>
+          <div class="">
             <gotrip />
           </div>
 

@@ -69,7 +69,7 @@ router.post("/register", async (req, res) => {
       status: "ok haha",
       msg: "user saved successfully haha....don't worry the next time u login owgay haha",
       user: savedCar,
-      token,
+    
     });
   } catch (error) {
     console.log(error.message);
