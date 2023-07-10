@@ -21,3 +21,4 @@ const carSpecSchema = new Schema({
         unique : true
     },
 })
+module.exports  =  model("car/carSpec" , carSpecSchema)

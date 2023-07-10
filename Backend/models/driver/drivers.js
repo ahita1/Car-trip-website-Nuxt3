@@ -24,5 +24,5 @@ const driverSchema = new Schema({
 })
 
 
-module.exports  =  model("Driver" , driverSchema)
+module.exports  =  model("driver/drivers" , driverSchema)
 

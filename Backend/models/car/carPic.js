@@ -6,5 +6,4 @@ const carPicSchema = new Schema({
         unique : true
     },
 })
-module.exports  =  model("Driver" , carPicSchema)
-
+module.exports  =  model("car/carPic" , carPicSchema)

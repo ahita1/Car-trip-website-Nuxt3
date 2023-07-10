@@ -26,6 +26,10 @@ app.get("/", (req, res) => {
 });
 
 app.use("/carDetails" , require("./routes/carDetails"));
+app.use("/carSpec" , require("./routes/carSpec"));
+app.use("/carPic" , require("./routes/carPic"));
+app.use("/driverInfo" , require("./routes/driverInfo"));
+
 // app.use("/accounts" , require("./routes/accounts"));
 
 app.listen(process.env.PORT, () => {  
