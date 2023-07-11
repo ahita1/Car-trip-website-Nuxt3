@@ -50,6 +50,7 @@
                   placeholder="Adama"
                 />
               </div>
+              
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">cardID:</label>
                 <input
@@ -62,8 +63,9 @@
               <div class=" flex justify-end ">
                   <button class="bg-green-500 px-10 py-2 rounded-md text-white hover:bg-green-800 hover:font-bold">Next</button>
                  </div>
+               
             </form>
-           
+         
           </div>
          
         </div>
