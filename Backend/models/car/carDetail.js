@@ -3,7 +3,6 @@ const carDetailSchema = new Schema({
     carName : {
         type : String,
         required : true,
-        unique : true
     },
     carID : {
         type : String,
@@ -18,12 +17,10 @@ const carDetailSchema = new Schema({
     carModel : {
         type : String,
         required : true,
-        unique : true
     },
     carYear : {
         type : String,
-        required : true,
-       
+        required : true, 
     },
     carLPN : {
         type : String,
