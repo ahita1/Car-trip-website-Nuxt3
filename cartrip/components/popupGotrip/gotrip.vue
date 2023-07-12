@@ -8,14 +8,14 @@
 
     <div id="popup" class="popup">
       <div class="popup-content ">
-        <div class="w-full h-full">
+        <div class="w-full ">
           <div class="flex justify-between mb-2">
             <!-- <span class="close" @click="closePopup()">&times;</span> -->
             <h1 v-if="step1" class="text-2xl text-green-950 ">
               Enter Your Identity Information
             </h1>
             <h1 v-if="step2" class="text-2xl text-green-950 ">
-              Enter Your Choice Car Information
+              Enter Your  Choice Information
             </h1>
             <h1 v-if="step3" class="text-2xl text-green-950 ">
               Enter Trip Status Information
