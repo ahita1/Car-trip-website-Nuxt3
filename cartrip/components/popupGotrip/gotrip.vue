@@ -8,7 +8,7 @@
 
     <div id="popup" class="popup">
       <div class="popup-content ">
-        <div class="w-full ">
+        <div class="w-full h-full">
           <div class="flex justify-between mb-2">
             <!-- <span class="close" @click="closePopup()">&times;</span> -->
             <h1 v-if="step1" class="text-2xl text-green-950 ">
@@ -35,9 +35,9 @@
             <Icon class="hover:text-green-700" icon="carbon:location-filled" />
           </div>
 
-          <div v-if="step1" class=" w-full flex justify-center items-center">
-            <div class="space-y-4 w-full flex flex-col">
-              <div class="flex justify-center">
+          <div v-if="step1" class=" w-full h-full flex justify-center items-center">
+            <div class="space-y-4  w-full flex flex-col">
+              <div class="flex justify-center items-center h-full">
                 <form action="" class="space-y-2">
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">fullName:</label>
@@ -82,7 +82,22 @@
               </div>
             </form>
               </div>
-          
+
+
+           <div class="flex justify-between mb-auto">
+              <button
+              @click="back"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold hover:text-white"
+              >
+                Back
+              </button>
+              <button
+              @click="next"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold  hover:text-white"
+              >
+                Next
+              </button>
+          </div>
             </div>
           </div>
 
@@ -102,7 +117,7 @@
               <div class="flex justify-center">
                 <form action="" class="space-y-2">
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">fullName:</label>
+                <label class="w-5/12" for="firstName">carType:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -110,7 +125,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">email:</label>
+                <label class="w-5/12" for="firstName">carModel</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -118,7 +133,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">phoneNumber:</label>
+                <label class="w-5/12" for="firstName">Transmission:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -126,7 +141,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Address</label>
+                <label class="w-5/12" for="firstName">CarFuelType</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -135,16 +150,29 @@
               </div>
 
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">cardID:</label>
+                <label class="w-5/12" for="firstName">N_Seats:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
-                  type="text"
+                  type="number"
                   placeholder="Oro/6786785"
                 />
               </div>
             </form>
               </div>
-           
+            <div class="flex justify-between mb-auto">
+              <button
+              @click="back"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold hover:text-white"
+              >
+                Back
+              </button>
+              <button
+              @click="next"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold  hover:text-white"
+              >
+                Next
+              </button>
+          </div>
             </div>
           </div>
           
@@ -163,7 +191,7 @@
               <div class="flex justify-center">
                 <form action="" class="space-y-2">
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">fullName:</label>
+                <label class="w-5/12" for="firstName">Start Location:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -171,7 +199,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">email:</label>
+                <label class="w-5/12" for="firstName">Destination:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -179,7 +207,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">phoneNumber:</label>
+                <label class="w-5/12" for="firstName">Start_Date:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -187,7 +215,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Address</label>
+                <label class="w-5/12" for="firstName">end_Date</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -196,7 +224,7 @@
               </div>
 
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">cardID:</label>
+                <label class="w-5/12" for="firstName">Luggage</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -205,7 +233,20 @@
               </div>
             </form>
               </div>
-           
+            <div class="flex justify-between mb-auto">
+              <button
+              @click="back"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold hover:text-white"
+              >
+                Back
+              </button>
+              <button
+              @click="next"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold  hover:text-white"
+              >
+                Next
+              </button>
+          </div>
             </div>
           </div>
 
@@ -224,7 +265,7 @@
               <div class="flex justify-center">
                 <form action="" class="space-y-2">
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">fullName:</label>
+                <label class="w-5/12" for="firstName">Cardholder Name:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -232,7 +273,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">email:</label>
+                <label class="w-5/12" for="firstName">Card Number:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -240,7 +281,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">phoneNumber:</label>
+                <label class="w-5/12" for="firstName">Expiration Date:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -248,7 +289,7 @@
                 />
               </div>
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Address</label>
+                <label class="w-5/12" for="firstName">CVV/CVC</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
@@ -257,19 +298,40 @@
               </div>
 
               <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">cardID:</label>
+                <label class="w-5/12" for="firstName">Billing Address:</label>
                 <input
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Oro/6786785"
                 />
               </div>
+              <!-- <div class="flex grid-cols-2">
+                <label class="w-5/12" for="firstName">Payment Amount:</label>
+                <input
+                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
+                  type="text"
+                  placeholder="Oro/6786785"
+                />
+              </div>
+              <div class="flex grid-cols-2">
+                <label class="w-5/12" for="firstName">Payment Currency:</label>
+                <input
+                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
+                  type="text"
+                  placeholder="Oro/6786785"
+                />
+              </div>
+              <div class="flex grid-cols-2">
+                <label class="w-5/12" for="firstName">Payment Method:</label>
+                <input
+                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
+                  type="text"
+                  placeholder="Oro/6786785"
+                />
+              </div> -->
             </form>
               </div>
-            </div>
-          </div>
-
-          <div class="flex justify-between mb-auto">
+               <div class="flex justify-between mb-auto">
               <button
               @click="back"
                 class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold hover:text-white"
@@ -280,9 +342,39 @@
               @click="next"
                 class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold  hover:text-white"
               >
-                Next
+                Submit
               </button>
           </div>
+            </div>
+          </div>
+
+
+          <div v-if="step5" class="h-full w-full flex justify-center items-center">
+            <div class="space-y-4 w-full flex flex-col">
+              <div class="flex justify-center">
+                <p class="text-3xl text-green-500">
+                  Thank Your For Submitting Your Trip Status Information
+                </p>
+              </div>
+            <div class="flex justify-between mb-auto">
+              <button
+              @click="back"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold hover:text-white"
+              >
+                
+              </button>
+              <button
+              @click="next"
+                class="bg-green-300 px-10 py-2 rounded-full  hover:bg-green-800 hover:font-bold  hover:text-white"
+              >
+                Close
+              </button>
+          </div>
+            </div>
+          </div>
+
+
+         
          
         </div>
       </div>
@@ -314,14 +406,31 @@ export default {
       popup.style.display = "none";
     },
 
-    next(){
-     this.step1 = true
-
-
+      next() {
+      if (this.step1) {
+        this.step1 = false;
+        this.step2 = true;
+      } else if (this.step2) {
+        this.step2 = false;
+        this.step3 = true;
+      } else if (this.step3) {
+        this.step3 = false;
+        this.step4 = true;
+      }
     },
-    back(){
 
-    }
+  back() {
+      if (this.step2) {
+        this.step1 = true;
+        this.step2 = false;
+      } else if (this.step3) {
+        this.step2 = true;
+        this.step3 = false;
+      } else if (this.step4) {
+        this.step3 = true;
+        this.step4 = false;
+      }
+    },
   },
 };
 </script>
