@@ -305,30 +305,7 @@
                   placeholder="Oro/6786785"
                 />
               </div>
-              <!-- <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Payment Amount:</label>
-                <input
-                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
-                  type="text"
-                  placeholder="Oro/6786785"
-                />
-              </div>
-              <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Payment Currency:</label>
-                <input
-                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
-                  type="text"
-                  placeholder="Oro/6786785"
-                />
-              </div>
-              <div class="flex grid-cols-2">
-                <label class="w-5/12" for="firstName">Payment Method:</label>
-                <input
-                  class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
-                  type="text"
-                  placeholder="Oro/6786785"
-                />
-              </div> -->
+             
             </form>
               </div>
                <div class="flex justify-between mb-auto">
