@@ -62,7 +62,7 @@
                   <DialogPanel
                     class="w-[700px] h-[500px] transform overflow-hidden rounded-2xl bg-white align-middle shadow-3xl transition-all"
                   >
-                    <div class="w-full h-full">
+                    <div class="w-full ">
                       <div
                         class="w-full flex justify-end items-start py-2 px-2"
                       >
@@ -96,7 +96,7 @@
 
                       <div class="h-full w-full ">
                         
-                         <div class="h-full flex flex-col" v-if="step1">
+                         <div class="h-full" v-if="step1">
                           <div  class="w-full flex justify-center items-center">
                             <form
                               @submit="(e) => login(e)"
@@ -194,7 +194,7 @@
                             </form>
                           </div>
                        
-                        <div class="flex justify-between  px-5 mt-auto">
+                        <div class="flex justify-between  px-5 mt-20">
                           <button
                             @click="back"
                             class="bg-green-300 px-10 py-2 rounded-full hover:bg-green-800 hover:font-bold hover:text-white"
@@ -215,7 +215,7 @@
 
 
 
-                         <div class="h-full flex flex-col" v-if="step2">
+                         <div class="h-full " v-if="step2">
                           <div  class="w-full flex justify-center items-center">
                             <form
                               @submit="(e) => login(e)"
@@ -257,7 +257,7 @@
                             </form>
                           </div>
                        
-                        <div class="flex justify-between  px-5 mt-auto">
+                        <div class="flex justify-between  px-5 mt-20">
                           <button
                             @click="back"
                             class="bg-green-300 px-10 py-2 rounded-full hover:bg-green-800 hover:font-bold hover:text-white"
@@ -284,7 +284,7 @@
 
 
 
-                         <div class="h-full flex flex-col" v-if="step3">
+                         <div class="h-full " v-if="step3">
                           <div  class="w-full flex justify-center items-center">
                             <form
                               @submit="(e) => login(e)"
@@ -362,7 +362,7 @@
                             </form>
                           </div>
                        
-                        <div class="flex justify-between  px-5 mt-auto">
+                        <div class="flex justify-between  px-5 mt-20">
                           <button
                             @click="back"
                             class="bg-green-300 px-10 py-2 rounded-full hover:bg-green-800 hover:font-bold hover:text-white"
@@ -784,6 +784,10 @@ return {
     closePopup() {
       var popup = document.getElementById("popup");
       popup.style.display = "none";
+      this.step1 = true,
+      this.step2 = false
+      this.step3 = false
+      this.step4 = false
     },
     next() {
       if (this.step1) {

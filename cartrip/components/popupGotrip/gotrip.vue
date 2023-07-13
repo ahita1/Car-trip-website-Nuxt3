@@ -308,6 +308,7 @@
              
             </form>
               </div>
+              
                <div class="flex justify-between mb-auto">
               <button
               @click="back"
@@ -381,6 +382,10 @@ export default {
     closePopup() {
       var popup = document.getElementById("popup");
       popup.style.display = "none";
+      this.step1 = true,
+      this.step2 = false
+      this.step3 = false
+      this.step4 = false
     },
 
       next() {
