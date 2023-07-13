@@ -326,7 +326,7 @@
           </div>
 
 
-          <div v-if="step5" class="h-full w-full flex justify-center items-center">
+          <!-- <div v-if="step5" class="h-full w-full flex justify-center items-center">
             <div class="space-y-4 w-full flex flex-col">
               <div class="flex justify-center">
                 <p class="text-3xl text-green-500">
@@ -348,7 +348,7 @@
               </button>
           </div>
             </div>
-          </div>
+          </div> -->
 
 
          
