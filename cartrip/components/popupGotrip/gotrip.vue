@@ -2,7 +2,7 @@
   <div>
     <div class="flex space-x-2">
       <button @click="openPopup" class="trip text-green-400 mb-7">
-        Go trip
+        Go trip {{ fullName }}
       </button>
     </div>
 
@@ -12,7 +12,7 @@
           <div class="flex justify-between mb-2">
             <!-- <span class="close" @click="closePopup()">&times;</span> -->
             <h1 v-if="step1" class="text-2xl text-green-950 ">
-              Enter Your Identity Information
+              Enter Your Identity Information 
             </h1>
             <h1 v-if="step2" class="text-2xl text-green-950 ">
               Enter Your  Choice Information
@@ -42,6 +42,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">fullName:</label>
                 <input
+                v-model="fullName"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Abebe"
@@ -50,6 +51,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">email:</label>
                 <input
+                v-model="email"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="username@gmail.com"
@@ -58,6 +60,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">phoneNumber:</label>
                 <input
+                v-model="phoneNumber"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="0913*****"
@@ -66,6 +69,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Address</label>
                 <input
+                v-model="Address"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Adama"
@@ -75,6 +79,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">cardID:</label>
                 <input
+                v-model="cardID"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Oro/6786785"
@@ -119,42 +124,47 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">carType:</label>
                 <input
+                v-model="carType"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
-                  placeholder="Abebe"
+                  placeholder="Suv"
                 />
               </div>
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">carModel</label>
                 <input
+                v-model="carModel"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
-                  placeholder="username@gmail.com"
+                  placeholder="2023"
                 />
               </div>
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Transmission:</label>
                 <input
+                v-model="Transmission"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
-                  placeholder="0913*****"
+                  placeholder="Automatic"
                 />
               </div>
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">CarFuelType</label>
                 <input
+                v-model="CarFuelType"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
-                  placeholder="Adama"
+                  placeholder="Benzene"
                 />
               </div>
 
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">N_Seats:</label>
                 <input
+                v-model="N_Seats"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="number"
-                  placeholder="Oro/6786785"
+                  placeholder="3"
                 />
               </div>
             </form>
@@ -193,6 +203,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Start Location:</label>
                 <input
+                v-model="StartLocation"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Abebe"
@@ -201,6 +212,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Destination:</label>
                 <input
+                v-model="Destination"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="username@gmail.com"
@@ -209,6 +221,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Start_Date:</label>
                 <input
+                v-model="Start_Date"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="0913*****"
@@ -217,6 +230,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">end_Date</label>
                 <input
+                v-model="end_Date"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Adama"
@@ -226,6 +240,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Luggage</label>
                 <input
+                v-model="Luggage"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Oro/6786785"
@@ -267,6 +282,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Cardholder Name:</label>
                 <input
+                v-model="cardholderName"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Abebe"
@@ -275,6 +291,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Card Number:</label>
                 <input
+                v-model="cardNumber"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="username@gmail.com"
@@ -283,6 +300,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Expiration Date:</label>
                 <input
+                v-model="expirationDate"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="0913*****"
@@ -291,6 +309,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">CVV/CVC</label>
                 <input
+                v-model="cvv"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Adama"
@@ -300,6 +319,7 @@
               <div class="flex grid-cols-2">
                 <label class="w-5/12" for="firstName">Billing Address:</label>
                 <input
+                v-model="BillingAddress"
                   class="outline-none border border-slate-300 rounded w-7/12 py-1 px-4 bg-green-100"
                   type="text"
                   placeholder="Oro/6786785"
@@ -366,12 +386,41 @@ export default {
   components: {
 		Icon,
 	},
+
   data(){
     return{
      step1 : true,
      step2 : false,
      step3 : false,
      step4 : false,
+     personalInfo : {
+      fullName : '',
+      email : '',
+      phoneNumber : '',
+      Address : '',
+      cardID : '',
+     },
+     carChoice : {
+      carType : '',
+      carModel : '',
+      Transmission : '',
+      CarFuelType : '',
+      N_Seats : 0,
+     },
+     tripStatus : {
+      StartLocation : '',
+      Destination : '',
+      Start_Date : '',
+      end_Date : '',
+      Luggage : '',
+     },
+     payment : {
+      cardholderName : '',
+      cardNumber : '',
+      expirationDate : '',
+      cvv : '',
+      BillingAddress : '',
+     },
     }
   },
   methods: {
@@ -387,28 +436,93 @@ export default {
       this.step3 = false
       this.step4 = false
     },
-
+    
       next() {
       if (this.step1) {
+        try {
+          this.personalInfo.fullName = "Ahita"
+          this.personalInfo.email = "ahitafani833@gmail.com"
+          this.personalInfo.phoneNumber = "0901887525"
+          this.personalInfo.Address = "Adama"
+          this.personalInfo.cardID = "0169/12"
+        } catch (error) {
+          console.log(error);
+        }
         this.step1 = false;
         this.step2 = true;
       } else if (this.step2) {
+        try {
+          this.carChoice.carType = "Ahita"
+          this.carChoice.carModel = "ahitafani833@gmail.com"
+          this.carChoice.Transmission = "0901887525"
+          this.carChoice.CarFuelType = "Adama"
+          this.carChoice.N_Seats = "0169/12"
+        } catch (error) {
+          console.log(error);
+        }
         this.step2 = false;
         this.step3 = true;
       } else if (this.step3) {
+
+        try {
+          this.tripStatus.StartLocation = "Ahita"
+          this.tripStatus.Destination = "ahitafani833@gmail.com"
+          this.tripStatus.Start_Date = "0901887525"
+          this.tripStatus.end_Date = "Adama"
+          this.tripStatus.Luggage = "0169/12"
+        } catch (error) {
+          console.log(error);
+        }
         this.step3 = false;
         this.step4 = true;
+      } else if (this.step4){
+      try {
+        this.payment.cardholderName = "Ahita"
+          this.payment.cardNumber = "ahitafani833@gmail.com"
+          this.payment.expirationDate = "0901887525"
+          this.payment.cvv = "Adama"
+          this.payment.BillingAddress = "0169/12"
+      } catch (error) {
+        console.log(error);
+      }
       }
     },
 
   back() {
       if (this.step2) {
+        try {
+          this.personalInfo.fullName = ""
+          this.personalInfo.email = ""
+          this.personalInfo.phoneNumber = ""
+          this.personalInfo.Address = ""
+          this.personalInfo.cardID = ""
+        } catch (error) {
+          console.log(error);
+        }
         this.step1 = true;
         this.step2 = false;
       } else if (this.step3) {
+        try {
+          this.carChoice.carType = ""
+          this.carChoice.carModel = ""
+          this.carChoice.Transmission = ""
+          this.carChoice.CarFuelType = ""
+          this.carChoice.N_Seats = ""
+        } catch (error) {
+          console.log(error);
+        }
         this.step2 = true;
         this.step3 = false;
       } else if (this.step4) {
+        try {
+          this.tripStatus.StartLocation = ""
+          this.tripStatus.Destination = ""
+          this.tripStatus.Start_Date = ""
+          this.tripStatus.end_Date = ""
+          this.tripStatus.Luggage = ""
+        } catch (error) {
+          console.log(error)
+        }
         this.step3 = true;
         this.step4 = false;
       }
