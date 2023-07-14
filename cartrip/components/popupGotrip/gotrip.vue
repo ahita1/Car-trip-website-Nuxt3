@@ -436,7 +436,7 @@ export default {
       this.step3 = false
       this.step4 = false
     },
-    
+
       next() {
       if (this.step1) {
         try {
@@ -487,21 +487,9 @@ export default {
       }
       }
     },
-
+    
   back() {
       if (this.step2) {
-        try {
-          this.personalInfo.fullName = ""
-          this.personalInfo.email = ""
-          this.personalInfo.phoneNumber = ""
-          this.personalInfo.Address = ""
-          this.personalInfo.cardID = ""
-        } catch (error) {
-          console.log(error);
-        }
-        this.step1 = true;
-        this.step2 = false;
-      } else if (this.step3) {
         try {
           this.carChoice.carType = ""
           this.carChoice.carModel = ""
@@ -511,15 +499,27 @@ export default {
         } catch (error) {
           console.log(error);
         }
-        this.step2 = true;
-        this.step3 = false;
-      } else if (this.step4) {
+        this.step1 = true;
+        this.step2 = false;
+      } else if (this.step3) {
         try {
           this.tripStatus.StartLocation = ""
           this.tripStatus.Destination = ""
           this.tripStatus.Start_Date = ""
           this.tripStatus.end_Date = ""
           this.tripStatus.Luggage = ""
+        } catch (error) {
+          console.log(error);
+        }
+        this.step2 = true;
+        this.step3 = false;
+      } else if (this.step4) {
+        try {
+          this.payment.cardholderName = ""
+          this.payment.cardNumber = ""
+          this.payment.expirationDate = ""
+          this.payment.cvv = ""
+          this.payment.BillingAddress = ""
         } catch (error) {
           console.log(error)
         }
